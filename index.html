@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Static Authentication</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="login-header">
+            <h2>Welcome Back</h2>
+            <p>Please enter your details to sign in.</p>
+        </div>
+
+        <!-- Error Message Banner -->
+        <div id="error-message" class="error-banner hidden">
+            <i class="fa-solid fa-circle-exclamation"></i> <span id="error-text">Invalid email or password</span>
+        </div>
+
+        <form id="login-form">
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="email" placeholder="name@gemail.com" required>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="password" placeholder="please enter your password" required>
+                    <i class="fa-solid fa-eye" id="toggle-password"></i>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <label class="remember-me">
+                    <input type="checkbox" id="remember"> Remember me
+                </label>
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
+
+            <button type="submit" id="submit-btn">Sign In</button>
+        </form>
+
+        <div class="login-footer">
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+            <p class="demo-credentials">Demo: <code>admin@example.com</code> / <code>password123</code></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+ </html>  
